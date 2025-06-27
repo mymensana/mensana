@@ -1,0 +1,407 @@
+    /* HIDE BREADCRUMB BANNER ON COURSE ARCHIVE PAGES ONLY */
+    body.post-type-archive-courses .archive-page-banner,
+    body.post-type-archive-courses .archive-banner,
+    body.post-type-archive-courses .page-banner,
+    body.post-type-archive-courses .breadcrumb-banner,
+    body.post-type-archive-courses .course-archive-banner,
+    body.post-type-archive-courses .archive-header,
+    body.post-type-archive-courses .page-header-area,
+    body.post-type-archive-courses .page-title-area,
+    body.post-type-archive-courses .banner-area,
+    body.post-type-archive-courses .hero-banner,
+    body.post-type-archive-courses .page-breadcrumb,
+    body.post-type-archive-courses .breadcrumb-area,
+    body.post-type-archive-courses .edublink-breadcrumb-area,
+    body.post-type-archive-courses .edublink-page-title-area,
+    body.post-type-archive-courses .course-archive-header,
+    body.post-type-archive-courses section[class*="banner"],
+    body.post-type-archive-courses section[class*="breadcrumb"],
+    body.post-type-archive-courses section[class*="page-title"],
+    body.post-type-archive-courses section[class*="hero"],
+    body.post-type-archive-courses .entry-header {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    /* Target the specific breadcrumb section that contains "Archives: Courses" - ARCHIVE ONLY */
+    body.post-type-archive-courses .page-title-area,
+    body.post-type-archive-courses .page-header,
+    body.post-type-archive-courses .archive-description,
+    body.post-type-archive-courses .archive-title,
+    body.post-type-archive-courses .page-title,
+    body.post-type-archive-courses [class*="page-title"],
+    body.post-type-archive-courses [class*="archive-title"],
+    body.post-type-archive-courses [class*="breadcrumb"] {
+        display: none !important;
+    }
+
+    /* Apply Poppins font to course archive and course cards (specific to archive view) */
+    body.post-type-archive-courses .tutor-courses-wrap,
+    body.post-type-archive-courses .tutor-courses-wrap *,
+    body.post-type-archive-courses .tutor-course-card,
+    body.post-type-archive-courses .tutor-course-card *,
+    body.post-type-archive-courses .tutor-course-loop-wrap,
+    body.post-type-archive-courses .tutor-course-loop-wrap *,
+    body.post-type-archive-courses [class*="tutor-course"],
+    body.post-type-archive-courses [class*="tutor-course"] *,
+    body.post-type-archive-courses .course-item,
+    body.post-type-archive-courses .course-item *,
+    body.post-type-archive-courses .course-card,
+    body.post-type-archive-courses .course-card *,
+    body.post-type-archive-courses .edublink-single-course,
+    body.post-type-archive-courses .edublink-single-course * {
+        font-family: 'Poppins', sans-serif !important;
+    }
+
+    /* Main course card container - ARCHIVE ONLY */
+    body.post-type-archive-courses .eb-tutor-archive-courses .edublink-single-course {
+        background: var(--edublink-color-white, #ffffff) !important;
+        border-radius: 12px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04) !important;
+        border: 1px solid rgba(0, 0, 0, 0.06) !important;
+        overflow: hidden !important;
+        transition: all 0.3s ease !important;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        position: relative !important;
+    }
+
+    /* Enhanced hover effect for course cards - ARCHIVE ONLY */
+    body.post-type-archive-courses .eb-tutor-archive-courses .edublink-single-course:hover {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+        transform: translateY(-2px) !important;
+    }
+
+    /* Inner container - ARCHIVE ONLY */
+    body.post-type-archive-courses .eb-tutor-archive-courses .edublink-single-course .inner {
+        background: var(--edublink-color-white, #ffffff) !important;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        position: relative !important;
+    }
+
+    /* Regular content area - ARCHIVE CARD STYLING */
+    body.post-type-archive-courses .edublink-single-course .content {
+        background: var(--edublink-color-white, #ffffff) !important;
+        flex: 1 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 24px !important;
+    }
+
+    /* REMOVE ALL DURATION/TIME/MINUTES BANNERS from cards on ARCHIVE */
+    body.post-type-archive-courses .edublink-single-course .course-top-meta,
+    body.post-type-archive-courses .edublink-single-course .course-badge,
+    body.post-type-archive-courses .edublink-single-course .course-label,
+    body.post-type-archive-courses .edublink-single-course .badge,
+    body.post-type-archive-courses .edublink-single-course [class*="badge"],
+    body.post-type-archive-courses .edublink-single-course [class*="label"]:not(.course-level),
+    body.post-type-archive-courses .edublink-single-course .course-top,
+    body.post-type-archive-courses .edublink-single-course .top-meta,
+    body.post-type-archive-courses .edublink-single-course .course-duration,
+    body.post-type-archive-courses .edublink-single-course .duration,
+    body.post-type-archive-courses .edublink-single-course .time-badge,
+    body.post-type-archive-courses .edublink-single-course .minutes-badge,
+    body.post-type-archive-courses .edublink-single-course .course-time,
+    body.post-type-archive-courses .edublink-single-course [class*="duration"],
+    body.post-type-archive-courses .edublink-single-course [class*="time"],
+    body.post-type-archive-courses .edublink-single-course [class*="minutes"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+
+    /* SMART NEW COURSE BANNER on cards on ARCHIVE */
+    body.post-type-archive-courses .edublink-single-course .smart-new-banner {
+        position: absolute !important;
+        top: 15px !important;
+        left: 15px !important;
+        background: linear-gradient(135deg, #FFD700, #FFA500) !important;
+        color: #333 !important;
+        padding: 6px 12px !important;
+        border-radius: 20px !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+        z-index: 5 !important;
+        box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+
+    /* IMPROVED CONTENT LAYOUT for cards on ARCHIVE */
+    body.post-type-archive-courses .edublink-single-course .content .title {
+        margin-bottom: 8px !important;
+        min-height: 48px !important;
+        display: flex !important;
+        align-items: flex-start !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .content .title h5,
+    body.post-type-archive-courses .edublink-single-course .content .title h4,
+    body.post-type-archive-courses .edublink-single-course .content .title a {
+        line-height: 1.4 !important;
+        text-decoration: none !important;
+    }
+
+    /* PRICE STYLING for cards on ARCHIVE */
+    body.post-type-archive-courses .edublink-single-course .course-price {
+        margin: 8px 0 12px 0 !important;
+        padding: 0 !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .course-price .price {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+    }
+
+    /* COURSE META STYLING for cards on ARCHIVE */
+    body.post-type-archive-courses .edublink-single-course .content .course-meta {
+        margin-top: auto !important;
+        padding-top: 12px !important;
+        border-top: 1px solid #f0f0f0 !important;
+        display: block !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .content .course-meta ul {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 6px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+        width: 100% !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .content .course-meta li {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        font-size: 15px !important;
+        color: #6b7280 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.4 !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .content .course-meta li i {
+        font-size: 18px !important;
+        color: #9ca3af !important;
+        width: 18px !important;
+        height: 18px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+        background: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        font-family: inherit !important;
+        font-style: normal !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .content .course-meta li i.icon-24 {
+        font-size: 16px !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .content .course-meta li i.icon-25 {
+        font-size: 16px !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .content .course-meta .custom-meta-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 6px !important;
+        margin-top: 6px !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .content .course-meta .custom-meta-weeks,
+    body.post-type-archive-courses .edublink-single-course .content .course-meta .custom-meta-duration {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        font-size: 15px !important;
+        color: #6b7280 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.4 !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .content .course-meta .custom-meta-weeks i,
+    body.post-type-archive-courses .edublink-single-course .content .course-meta .custom-meta-duration i {
+        font-size: 16px !important;
+        color: #9ca3af !important;
+        width: 18px !important;
+        height: 18px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+        background: none !important;
+        border: none !important;
+        font-family: inherit !important;
+        font-style: normal !important;
+    }
+
+    /* Course hover content styling for ARCHIVE */
+    body.post-type-archive-courses .edublink-single-course .course-hover-content {
+        position: absolute !important;
+        top: 50% !important;
+        -webkit-transform: translateY(-50%) !important;
+        -ms-transform: translateY(-50%) !important;
+        transform: translateY(-50%) !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        border-radius: 4px !important;
+        padding: 50px 20px 45px 30px !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        -webkit-transition: var(--edublink-transition) !important;
+        transition: var(--edublink-transition) !important;
+        display: inline-table !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course:hover .course-hover-content {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .course-hover-content *:not(.edu-btn):not(.btn):not(button):not(input):not(select) {
+        background: none !important;
+        background-color: transparent !important;
+        background-image: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .course-hover-content,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content p,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content h1,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content h2,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content h3,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content h4,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content h5,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content h6,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content span:not([class*="btn"]):not([class*="button"]),
+    body.post-type-archive-courses .edublink-single-course .course-hover-content a:not(.edu-btn):not(.btn):not([class*="button"]),
+    body.post-type-archive-courses .edublink-single-course .course-hover-content li,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .title,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .title a,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content strong,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content em,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content small,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content label,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .course-meta,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .course-meta li,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .course-price,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .price {
+        color: var(--edublink-color-white, #ffffff) !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .edu-btn,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .btn,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content button,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content [class*="btn"],
+    body.post-type-archive-courses .edublink-single-course .course-hover-content [class*="button"],
+    body.post-type-archive-courses .edublink-single-course .course-hover-content a[href*="enroll"] {
+        background: var(--edublink-color-secondary, #EE4A62) !important;
+        background-color: var(--edublink-color-secondary, #EE4A62) !important;
+        color: var(--edublink-color-white, #ffffff) !important;
+        border: none !important;
+        border-radius: 5px !important;
+        padding: 12px 24px !important;
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+        font-weight: 500 !important;
+        font-size: 14px !important;
+        line-height: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        position: relative !important;
+        z-index: 10 !important;
+        width: auto !important;
+        min-width: 120px !important;
+        box-sizing: border-box !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .edu-btn:hover,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .btn:hover,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content button:hover,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content [class*="btn"]:hover,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content [class*="button"]:hover,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content a[href*="enroll"]:hover {
+        background: #d63850 !important;
+        background-color: #d63850 !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 12px rgba(238, 74, 98, 0.3) !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .edu-btn *,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content .btn *,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content button *,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content [class*="btn"] *,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content [class*="button"] *,
+    body.post-type-archive-courses .edublink-single-course .course-hover-content a[href*="enroll"] * {
+        color: var(--edublink-color-white, #ffffff) !important;
+        text-align: center !important;
+        background: none !important;
+        background-color: transparent !important;
+    }
+
+    /* Standardize thumbnail heights for ARCHIVE */
+    body.post-type-archive-courses .edublink-single-course .thumbnail {
+        height: 200px !important;
+        overflow: hidden !important;
+        position: relative; /* Needed for the banner */
+    }
+
+    body.post-type-archive-courses .edublink-single-course .thumbnail img {
+        width: 100% !important;
+        height: 200px !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        transition: transform 0.3s ease !important;
+    }
+
+    body.post-type-archive-courses .edublink-single-course:hover .thumbnail img {
+        transform: scale(1.05) !important;
+    }
+
+    /* Equal height columns for ARCHIVE */
+    body.post-type-archive-courses .eb-tutor-archive-courses .edublink-row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 24px !important;
+    }
+
+    body.post-type-archive-courses .eb-tutor-archive-courses [class*="edublink-col-"] {
+        display: flex !important;
+        margin-bottom: 30px !important;
+    }
+
+    /* ADJUST LAYOUT AFTER REMOVING BREADCRUMB BANNER - ARCHIVE ONLY */
+    body.post-type-archive-courses .main-content,
+    body.post-type-archive-courses .site-content,
+    body.post-type-archive-courses .content-area,
+    body.post-type-archive-courses .primary-content,
+    body.post-type-archive-courses .page-content {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    body.post-type-archive-courses .eb-tutor-archive-courses,
+    body.post-type-archive-courses .course-archive-content,
+    body.post-type-archive-courses .tutor-courses-wrap {
+        margin-top: 20px !important;
+        padding-top: 0 !important;
+    }
